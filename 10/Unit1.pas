@@ -1,0 +1,65 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, math;
+
+type
+  TForm1 = class(TForm)
+    Label1: TLabel;
+    Edit1: TEdit;
+    Label2: TLabel;
+    Edit2: TEdit;
+    Label3: TLabel;
+    Edit3: TEdit;
+    Label4: TLabel;
+    Edit4: TEdit;
+    Label5: TLabel;
+    Edit5: TEdit;
+    Label6: TLabel;
+    Edit6: TEdit;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    Label10: TLabel;
+    Edit7: TEdit;
+    Label13: TLabel;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+
+
+procedure TForm1.Button1Click(Sender: TObject);
+var n,p,q,m,e,d:integer;
+s:string;
+const
+alphabit='јЅ¬√ƒ≈®∆«»… ЋћЌќѕ–—“”‘’÷„ЎўЏџ№Ёёя';
+begin
+p:=StrToInt(edit1.text);
+q:=StrToInt(edit2.text);
+n:=p*q;
+m:=(p-1)*(q-1);
+d:=StrToInt(edit3.text);
+e:=StrToInt(edit4.text);
+If not (D*E MOD M = 1) then ShowMessage('значение "≈" не удовлетвор€ет условию');
+s:=edit5.text;
+Edit6.Text:=floattostr(power(Pos(s[1], alphabit),3));
+
+end;
+end.
+
